@@ -1,3 +1,11 @@
+<?php
+/**
+ * Default email template.
+ *
+ * @package WordPress
+ */
+
+?>
 <!doctype html>
 <html>
 <head>
@@ -113,7 +121,7 @@
 									<table width="100%" cellpadding="0" cellspacing="0" border="0" style="">
 										<tr>
 											<td style="font-family: Verdana, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #3e3e3e; text-align: left; padding-bottom: 30px; padding-top: 15px;">
-												Copyright &copy; <?php echo date_i18n( 'Y' ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #1a1f8e">KrishaWeb</a>
+												Copyright &copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #1a1f8e">KrishaWeb</a>
 											</td>
 											<td style="font-family: Verdana, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #3e3e3e; text-align: right; padding-bottom: 30px; padding-top: 15px;">
 												Powered by <a href="#" target="_blank" style="text-decoration: none; color: #1a1f8e;">Contact Form 7 Email Addon</a>

@@ -1,4 +1,11 @@
+<?php
+/**
+ * Interview box email template.
+ *
+ * @package WordPress
+ */
 
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -185,7 +192,7 @@
 							<!-- footer start -->
 							<tr>
 								<td style="font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 12px; line-height: 22px; color: #72736d; text-align: left;  text-align: center; padding-top: 15px; padding-bottom: 15px; border-top: 0; border-left: 5px; border-right: 5px; border-bottom: 5px; border-style: solid; border-color: #666666;">
-									&copy; <?php echo date_i18n( 'Y' ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #72736d">KrishaWeb</a>
+									&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #72736d">KrishaWeb</a>
 								</td>
 							</tr>
 							<!-- footer end -->

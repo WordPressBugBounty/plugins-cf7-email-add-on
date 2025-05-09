@@ -1,3 +1,11 @@
+<?php
+/**
+ * Typewritter email template.
+ *
+ * @package WordPress
+ */
+
+?>
 <!doctype html>
 <html>
 <head>
@@ -146,7 +154,7 @@
 					<table width="100%" cellpadding="0" cellspacing="0" border="0" style="">
 						<tr>
 							<td style="font-family: Courier, Courier New, monospace, Arial; font-weight: normal; font-size: 14px; line-height: 24px; color: #444444; text-align: left; padding-bottom: 30px; padding-top: 15px; padding-left: 15px; padding-right: 15px;">
-								Copyright &copy; <?php echo date_i18n( 'Y' ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; font-weight: bold; color: #444444">KrishaWeb</a>
+								Copyright &copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; font-weight: bold; color: #444444">KrishaWeb</a>
 							</td>
 							<td style="font-family: Courier, Courier New, monospace, Arial; font-weight: normal; font-size: 14px; line-height: 24px; color: #444444; text-align: right; padding-bottom: 30px; padding-top: 15px; padding-left: 15px; padding-right: 15px;">
 								Powered by <a href="#" target="_blank" style="text-decoration: none; font-weight: bold; color: #444444;">Contact Form 7 Email Addon</a>

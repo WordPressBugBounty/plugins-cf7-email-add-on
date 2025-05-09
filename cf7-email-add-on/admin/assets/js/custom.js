@@ -109,7 +109,7 @@ jQuery( document ).ready( function( $ ) {
 								$( '#contact-form-editor #mail-panel  #wpcf7-mail-use-html' ).trigger( 'click' );
 							}
 							$( 'input[name=wpcf7-save]' ).removeAttr( 'disabled', 'disabled' );
-							$( '#mail-panel-tab a' ).trigger( 'click' );
+							openMailTab();
 						}else {
 							if( ! $( '#wpcf7-mail-2-active' ).is( ':checked' ) ) {
 								$( '#wpcf7-mail-2-active' ).trigger( 'click' );
@@ -120,12 +120,26 @@ jQuery( document ).ready( function( $ ) {
 								$( '#contact-form-editor #mail-panel  #wpcf7-mail-2-use-html' ).trigger( 'click' );
 							}
 							$( 'input[name=wpcf7-save]' ).removeAttr( 'disabled', 'disabled' );
-							$( '#mail-panel-tab a' ).trigger( 'click' );
+							openMailTab();
 						}
 					}
 				} );
 		}
 	} );
+	// Open mail tab
+	function openMailTab() {
+		// CF7 5.9 uses .ui-tabs-anchor, CF7 6+ uses data-panel
+		if ( jQuery(".ui-tabs-anchor[href='#mail-panel']").length ) {
+			jQuery(".ui-tabs-anchor[href='#mail-panel']").trigger("click"); // CF7 5.9 version
+			if ( jQuery( '#mail-panel-tab' ).hasClass( 'ui-tabs-active' ) )  {
+				jQuery( '#mail-panel-tab' ).addClass('active');
+			} else {
+				jQuery( '#mail-panel-tab' ).removeClass('active');
+			}
+		} else if (jQuery("#mail-panel-tab a").length) {
+			jQuery("#mail-panel-tab a")[0].click(); // CF7 6+ version
+		}
+	}
 	// Template change
 	$( '.cf7ea_email_template' ).change( function() {
 		if( $( this ).parents( 'li' ).hasClass( 'cf7ea-template-active' ) ) {

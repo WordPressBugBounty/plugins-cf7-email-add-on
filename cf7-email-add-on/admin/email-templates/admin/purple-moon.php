@@ -1,3 +1,11 @@
+<?php
+/**
+ * Purple Moon email template.
+ *
+ * @package WordPress
+ */
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -119,7 +127,7 @@
 											</tr>
 											<tr>
 												<td style="font-family: Verdana,Geneva,sans-serif; font-size: 11px; line-height: 22px; color: #68617a; text-transform: uppercase; font-weight: normal; text-align: center;">
-													&copy; <?php echo date_i18n( 'Y' ); ?> <a href="[_url]" target="_blank" style="text-decoration: none; color: #68617a; text-transform: uppercase;">Powered by</a>. Contact Form 7 Email Addon.
+													&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="[_url]" target="_blank" style="text-decoration: none; color: #68617a; text-transform: uppercase;">Powered by</a>. Contact Form 7 Email Addon.
 												</td>
 											</tr>
 											<tr>

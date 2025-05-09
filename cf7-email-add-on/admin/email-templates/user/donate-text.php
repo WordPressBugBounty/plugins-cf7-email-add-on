@@ -1,3 +1,11 @@
+<?php
+/**
+ * Donate text email template for user.
+ *
+ * @package WordPress
+ */
+
+?>
 <!doctype html>
 <html>
 <head>
@@ -104,7 +112,7 @@
 								<table width="100%" cellpadding="0" cellspacing="0" border="0" style="">
 									<tr>
 										<td style="font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #333333; text-align: left; padding-bottom: 25px; padding-top: 15px;">
-											Copyright &copy; <?php echo date_i18n( 'Y' ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #333333">KrishaWeb</a>
+											Copyright &copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #333333">KrishaWeb</a>
 										</td>
 										<td style="font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #333333; text-align: left; padding-bottom: 25px; padding-top: 15px; text-align: right;">
 											<a a href="#" target="_blank" style="text-decoration: none; color: #333333">Powered by Ninja Forms Email Addon</a>
