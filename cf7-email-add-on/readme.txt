@@ -1,10 +1,10 @@
-=== Email addons for CF7 ===
-Plugin Name: Email addons for CF7
+=== Email addon for CF7 ===
+Plugin Name: Email addon for CF7
 Plugin URI: https://wordpress.org/plugins/cf7-email-add-on
 Author: krishaweb
 Author URI: https://krishaweb.com
 Contributors: hardik2221, krishaweb, pratikgandhi, nikunjchauhan
-Tags: emailaddon, cf7-addon, contactform7, emailtemplate, htmlemail
+Tags: cf7, email template, contactform7, shortcode, html email
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.0
@@ -13,15 +13,15 @@ Copyright: (c) 2012-2025 KrishaWeb Technologies PVT LTD (info@krishaweb.com)
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Email addons for CF7 plugin provides the responsive Email templates to admin and users.
+Email addon for CF7 plugin provides the responsive Email templates to admin and users.
 
 == Description ==
 
-Email addons for CF7 is the email configuration extension to the Contact Form 7. It lets you customize the contact form email both for users and admin. You can select the most suitable email template from the pre-developed templates and easily customize the template as per your requirements. You can add and update the content, links, graphics and buttons of the email template that too without expert coding skills. 
+Email addon for CF7 is the email configuration extension to the Contact Form 7. It lets you customize the contact form email both for users and admin. You can select the most suitable email template from the pre-developed templates and easily customize the template as per your requirements. You can add and update the content, links, graphics and buttons of the email template that too without expert coding skills. 
 
 Different pre-developed email templates lets also enables you to do the A/B testing to understand the user behavior and improve the conversion rate. It is not just a contact from 7 email add on, it also helps you with your conversion optimization process. It is easy to install, set up and requires minimum technical skills to update.
 
-[Youtube https://www.youtube.com/watch?v=20jCxtgK_hQ]
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=20jCxtgK_hQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > **Plugin Features**
 >
@@ -49,7 +49,7 @@ Check such amazing email add-on for Ninja form as well at <a rel="nofollow" href
 
 == Installation ==
 1. In your WordPress Dashboard go to "Plugins" -> "Add Plugin".
-2. Search for "Email addons for CF7".
+2. Search for "Email addon for CF7".
 3. Install the plugin by pressing the "Install" button.
 4. Activate the plugin by pressing the "Activate" button.
 

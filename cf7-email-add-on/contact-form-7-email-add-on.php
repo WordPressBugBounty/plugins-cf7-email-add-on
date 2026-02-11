@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Email addons for CF7
+ * Plugin Name: Email addon for CF7
  * Plugin URI: https://wordpress.org/plugins/cf7-email-add-on/
- * Description: Email addons for CF7 plugin provides the responsive Email templates to admin and users.
+ * Description: Email addon for CF7 plugin provides the responsive Email templates to admin and users.
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * Author: KrishaWeb
