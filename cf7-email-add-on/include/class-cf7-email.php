@@ -6,6 +6,11 @@
  * @package WordPress
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 // If check class_exists or not.
 if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 	/**
@@ -27,15 +32,14 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 		 */
 		public function __construct() {
 			// Plugin meta row.
-			add_filter( 'plugin_row_meta', array( $this, 'cf7_email_add_on_plugin_row_meta' ), 10, 4 );
+			add_filter( 'plugin_row_meta', array( $this, 'cf7_email_add_on_plugin_row_meta' ), 10, 3 );
 			// If check current page.
 			// phpcs:ignore
 			if ( ! isset( $_REQUEST['page'] ) || $_REQUEST['page'] != 'wpcf7' ) {
 				return;
 			}
-			// Add template using AJAX.
+			// Add template using AJAX. Editor-only: no nopriv (logged-out) handler.
 			add_action( 'wp_ajax_cf7_email_add_on_add_admin_template', array( $this, 'cf7_email_add_on_add_admin_template' ) );
-			add_action( 'wp_ajax_nopriv_cf7_email_add_on_add_admin_template', array( $this, 'cf7_email_add_on_add_admin_template' ) );
 			// Contact form 7 editor filter.
 			add_filter( 'wpcf7_editor_panels', array( $this, 'cf7_email_add_on_editor_panels' ) );
 			// Admin enqueue script.
@@ -46,8 +50,6 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 
 		/**
 		 * Standard singleton pattern.
-		 *
-		 * @return Returns the current plugin instance.
 		 */
 		// phpcs:ignore
 		public static function _instance() {
@@ -105,8 +107,8 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 		public function cf7_email_add_on_save_contact_form() {
 			// phpcs:ignore
 			$post_id = ! empty( $_POST['post_ID'] ) ? (int) $_POST['post_ID'] : 0;
-			if ( isset( $post_id ) ) {
-				$contact_form_id = (int) $post_id;
+			if ( $post_id ) {
+				$contact_form_id = $post_id;
 				// Update contact form post meta.
 				// phpcs:ignore
 				$cf7ea_admin_template_name = ! empty( $_POST['cf7ea_admin_email'] ) ? sanitize_text_field( wp_unslash( $_POST['cf7ea_admin_email'] ) ) : '';
@@ -128,6 +130,11 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 			// WP ajax check security nonce.
 			check_ajax_referer( 'cf7-email-add-on', 'nonce' );
 
+			// Only users allowed to edit contact forms may load templates.
+			if ( ! current_user_can( 'wpcf7_edit_contact_forms' ) ) {
+				$this->cf7_email_add_on_send_response( 0, 'Error: You are not allowed to perform this action.' );
+			}
+
 			$template_name = ! empty( $_POST['template_name'] ) ? sanitize_text_field( wp_unslash( $_POST['template_name'] ) ) : '';
 			$template_type = ! empty( $_POST['template_type'] ) ? sanitize_text_field( wp_unslash( $_POST['template_type'] ) ) : '';
 
@@ -145,9 +152,8 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 			include_once $file_path;
 			$fields        = $this->cf7_email_add_on_create_dynamic_fields();
 			$template_data = str_replace( '[fields]', $fields, html_entity_decode( esc_html( ob_get_clean() ) ) );
-
 			if ( ! empty( $template_data ) ) {
-				$this->cf7_email_add_on_send_response( 1, str_replace( '[plugin_url]', CF7_PLUGIN_URL, $template_data ), $template_type );
+				$this->cf7_email_add_on_send_response( 1, str_replace( '[plugin_url]', plugin_dir_url( __FILE__ ), $template_data ), $template_type );
 			}
 
 			$this->cf7_email_add_on_send_response( 0, 'Error: Empty template data.' );
@@ -160,9 +166,31 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 		 * @param string $template_type template type.
 		 */
 		private function cf7_email_add_on_get_template_path( $template_name, $template_type ) {
-			$base_path     = plugin_dir_path( __FILE__ ) . '../admin/email-templates/';
-			$template_name = sanitize_file_name( $template_name . '.php' );
-			$file_path     = ( 'admin' === $template_type ) ? $base_path . 'admin/' . $template_name : $base_path . 'user/' . $template_name;
+			// Allowlist of bundled templates. The path is never derived from raw
+			// user input, which prevents Local File Inclusion (CVE-2024-10898).
+			$allowed_templates = array(
+				'admin' => array( 'default', 'gradient', 'purple-moon', 'space', 'typewriter' ),
+				'user'  => array(
+					'default',
+					'gradient',
+					'purple-moon',
+					'space',
+					'typewriter',
+					'donate-text',
+					'interview-box',
+					'meeting',
+				),
+			);
+
+			$dir = ( 'admin' === $template_type ) ? 'admin' : 'user';
+
+			// Reject anything that is not an explicitly bundled template.
+			if ( ! in_array( $template_name, $allowed_templates[ $dir ], true ) ) {
+				return false;
+			}
+
+			$file_path = plugin_dir_path( __FILE__ ) . '../admin/email-templates/' . $dir . '/' . $template_name . '.php';
+
 			return is_readable( $file_path ) ? $file_path : false;
 		}
 
@@ -195,7 +223,8 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 			$template_fields = '';
 			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			$post_id = ! empty( $_REQUEST['post'] ) ? (int) $_REQUEST['post'] : 0;
-			$post    = WPCF7_ContactForm::get_instance( $post_id );
+			// @phpstan-ignore-next-line.
+			$post = WPCF7_ContactForm::get_instance( $post_id );
 			// Get fields.
 			$fields = $post->collect_mail_tags();
 			// Create fields.
@@ -238,7 +267,7 @@ if ( ! class_exists( 'Cf7_Email_Add_on' ) ) {
 		/**
 		 * Clear mail template.
 		 */
-		// phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodDoubleUnderscore, Squiz.Commenting.FunctionComment.Missing
+		// phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodDoubleUnderscore, Squiz.Commenting.FunctionComment.Missing, PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.MethodDoubleUnderscore
 		public static function __clear_history() {
 			$cf7_form = new WP_Query(
 				array(

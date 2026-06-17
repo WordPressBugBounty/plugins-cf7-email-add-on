@@ -5,9 +5,14 @@
  * @package WordPress
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 //phpcs:ignore WordPress.Security.NonceVerification.Recommended
 $contact_form_id = ! empty( $_REQUEST['post'] ) ? (int) $_REQUEST['post'] : 0;
-if ( isset( $contact_form_id ) ) {
+if ( $contact_form_id ) {
 	$chk_cf7ea_admin_template     = get_post_meta( $contact_form_id, 'cf7ea_admin_template', true );
 	$chk_cf7ea_thank_you_template = get_post_meta( $contact_form_id, 'cf7ea_thank_you_template', true );
 }

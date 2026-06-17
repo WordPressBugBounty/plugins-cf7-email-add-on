@@ -5,6 +5,11 @@
  * @package WordPress
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 <!doctype html>
 <html>

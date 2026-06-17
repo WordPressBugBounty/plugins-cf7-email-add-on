@@ -6,6 +6,11 @@
  * @subpackage Cotact form 7 email addon
  */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 ?>
 
 <!-- Suggestion shortcode list-->

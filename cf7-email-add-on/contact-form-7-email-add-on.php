@@ -4,15 +4,15 @@
  * Plugin URI: https://wordpress.org/plugins/cf7-email-add-on/
  * Description: Email addon for CF7 plugin provides the responsive Email templates to admin and users.
  * Requires at least: 6.6
- * Requires PHP: 7.4
+ * Requires PHP: 8.1
  * Author: KrishaWeb
  * Author URI: https://www.krishaweb.com
  * Text Domain: cf7-email-add-on
  * Domain Path: /languages
  * License: GPLv3 or later
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- * Requires Plugins : contact-form-7
- * Version: 2.0
+ * Requires Plugins: contact-form-7
+ * Version: 2.1
  *
  * @package WordPress
  */
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'CF7_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'CF7_PLUGIN_VERSION', '1.9' );
+define( 'CF7_PLUGIN_VERSION', '2.1' );
 
 require_once 'include/class-cf7-email.php';
 
