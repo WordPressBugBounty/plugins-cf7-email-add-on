@@ -1,0 +1,407 @@
+# Copyright (C) 2026 KrishaWeb
+# This file is distributed under the GPLv3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Email Addon for Contact Form 7 2.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cf7-email-add-on\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-29T06:19:26+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cf7-email-add-on\n"
+
+#. Plugin Name of the plugin
+#: contact-form-7-email-add-on.php
+msgid "Email Addon for Contact Form 7"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: contact-form-7-email-add-on.php
+msgid "https://wordpress.org/plugins/cf7-email-add-on/"
+msgstr ""
+
+#. Description of the plugin
+#: contact-form-7-email-add-on.php
+msgid "Email Addon for Contact Form 7 plugin provides the responsive Email templates to admin and users."
+msgstr ""
+
+#. Author of the plugin
+#: contact-form-7-email-add-on.php
+msgid "KrishaWeb"
+msgstr ""
+
+#. Author URI of the plugin
+#: contact-form-7-email-add-on.php
+msgid "https://www.krishaweb.com"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:33
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:33
+msgid "PRO"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:37
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:37
+msgid "Your Emails Deserve Better"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:38
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:38
+msgid "Export HTML, live-preview &amp; test before you send, exclusive templates and more all just a click away!"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:43
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:43
+msgid "Yes, Show Me Pro!"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:65
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:65
+msgid "Active"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:85
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:85
+msgid "Select Template"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:88
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:88
+msgid "Selected"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:89
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:89
+msgid "Click Save to apply this template"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:103
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:103
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:199
+#: include/class-cf7-email-addon.php:199
+msgid "Donate Text"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:110
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:110
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:200
+#: include/class-cf7-email-addon.php:200
+msgid "Interview Box"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:117
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:117
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:201
+#: include/class-cf7-email-addon.php:201
+msgid "Meeting"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:124
+#: admin/contact-form-7-email-add-on-templates.php:162
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:124
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:162
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:195
+#: include/class-cf7-email-addon.php:195
+msgid "Gradient"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:131
+#: admin/contact-form-7-email-add-on-templates.php:169
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:131
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:169
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:196
+#: include/class-cf7-email-addon.php:196
+msgid "Purple Moon"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:138
+#: admin/contact-form-7-email-add-on-templates.php:176
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:138
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:176
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:197
+#: include/class-cf7-email-addon.php:197
+msgid "Space"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:145
+#: admin/contact-form-7-email-add-on-templates.php:183
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:145
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:183
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:106
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:194
+#: include/class-cf7-email-addon.php:106
+#: include/class-cf7-email-addon.php:194
+msgid "Default"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:152
+#: admin/contact-form-7-email-add-on-templates.php:190
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:152
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:190
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:198
+#: include/class-cf7-email-addon.php:198
+msgid "Typewriter"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:199
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:199
+msgid "Templates For User"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:201
+#: admin/contact-form-7-email-add-on-templates.php:216
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:201
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:216
+msgid "Export"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:214
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:214
+msgid "Templates For Admin"
+msgstr ""
+
+#: admin/contact-form-7-email-add-on-templates.php:232
+#: artifacts/cf7-email-add-on/admin/contact-form-7-email-add-on-templates.php:232
+msgid "Template preview"
+msgstr ""
+
+#: admin/shortcode-list.php:21
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:21
+msgid "Submissions"
+msgstr ""
+
+#: admin/shortcode-list.php:26
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:26
+msgid "Post Related"
+msgstr ""
+
+#: admin/shortcode-list.php:31
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:31
+msgid "Site Related"
+msgstr ""
+
+#: admin/shortcode-list.php:36
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:36
+msgid "User Related"
+msgstr ""
+
+#: admin/shortcode-list.php:45
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:45
+msgid "This tag is replaced by the submitter’s IP address."
+msgstr ""
+
+#: admin/shortcode-list.php:49
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:49
+msgid "This tag is replaced by the submitter’s user agent (browser) information."
+msgstr ""
+
+#: admin/shortcode-list.php:53
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:53
+msgid "This tag is replaced by the URL of the page in which the contact form is placed."
+msgstr ""
+
+#: admin/shortcode-list.php:57
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:57
+msgid "This tag is replaced by the date of the submission."
+msgstr ""
+
+#: admin/shortcode-list.php:61
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:61
+msgid "This tag is replaced by the time of the submission."
+msgstr ""
+
+#: admin/shortcode-list.php:65
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:65
+msgid "This tag is replaced by the number of form fields with invalid input."
+msgstr ""
+
+#: admin/shortcode-list.php:69
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:69
+msgid "This tag is replaced by a numeric string whose value increments, so this tag can work as the serial number of each submission. Requires Flamingo 1.5+ be installed."
+msgstr ""
+
+#: admin/shortcode-list.php:77
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:77
+msgid "This tag is replaced by the ID of the post."
+msgstr ""
+
+#: admin/shortcode-list.php:81
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:81
+msgid "This tag is replaced by the name (slug) of the post."
+msgstr ""
+
+#: admin/shortcode-list.php:85
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:85
+msgid "This tag is replaced by the title of the post."
+msgstr ""
+
+#: admin/shortcode-list.php:89
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:89
+msgid "This tag is replaced by the permalink URL of the post."
+msgstr ""
+
+#: admin/shortcode-list.php:93
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:93
+msgid "This tag is replaced by the author name of the post."
+msgstr ""
+
+#: admin/shortcode-list.php:97
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:97
+msgid "This tag is replaced by the author email of the post."
+msgstr ""
+
+#: admin/shortcode-list.php:105
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:105
+msgid "This tag is replaced by the title of the website."
+msgstr ""
+
+#: admin/shortcode-list.php:109
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:109
+msgid "This tag is replaced by the description (tagline) of the website."
+msgstr ""
+
+#: admin/shortcode-list.php:113
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:113
+msgid "This tag is replaced by the home URL of the website."
+msgstr ""
+
+#: admin/shortcode-list.php:117
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:117
+msgid "This tag is replaced by the email address of the primary admin user of the website."
+msgstr ""
+
+#: admin/shortcode-list.php:125
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:125
+msgid "This tag is replaced by the login name of the user."
+msgstr ""
+
+#: admin/shortcode-list.php:129
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:129
+msgid "This tag is replaced by the email address of the user."
+msgstr ""
+
+#: admin/shortcode-list.php:133
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:133
+msgid "This tag is replaced by the website URL of the user."
+msgstr ""
+
+#: admin/shortcode-list.php:137
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:137
+msgid "This tag is replaced by the first name of the user."
+msgstr ""
+
+#: admin/shortcode-list.php:141
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:141
+msgid "This tag is replaced by the last name of the user."
+msgstr ""
+
+#: admin/shortcode-list.php:145
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:145
+msgid "This tag is replaced by the nickname of the user."
+msgstr ""
+
+#: admin/shortcode-list.php:149
+#: artifacts/cf7-email-add-on/admin/shortcode-list.php:149
+msgid "This tag is replaced by the display name of the user."
+msgstr ""
+
+#: artifacts/cf7-email-add-on/contact-form-7-email-add-on.php:53
+#: contact-form-7-email-add-on.php:53
+msgid "Please activate Contact Form 7."
+msgstr ""
+
+#: artifacts/cf7-email-add-on/contact-form-7-email-add-on.php:54
+#: contact-form-7-email-add-on.php:54
+msgid "Plugin dependency check"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:102
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:149
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:234
+#: include/class-cf7-email-addon.php:102
+#: include/class-cf7-email-addon.php:149
+#: include/class-cf7-email-addon.php:234
+msgid "Email Template"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:104
+#: include/class-cf7-email-addon.php:104
+msgid "Admin:"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:105
+#: include/class-cf7-email-addon.php:105
+msgid "User:"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:108
+#: include/class-cf7-email-addon.php:108
+msgid "Reset Template"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:214
+msgid "CF7 Email Addon Pro Features: "
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:216
+#: include/class-cf7-email-addon.php:216
+msgid "Ability to export the HTML templates"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:217
+#: include/class-cf7-email-addon.php:217
+msgid "Setting panel to easily update the information"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:218
+#: include/class-cf7-email-addon.php:218
+msgid "Preview template &amp; send test email"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:220
+#: include/class-cf7-email-addon.php:220
+msgid "Buy Now"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:221
+#: include/class-cf7-email-addon.php:221
+msgid "Live Demo"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:481
+#: include/class-cf7-email-addon.php:481
+msgid "Documentation"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:482
+#: include/class-cf7-email-addon.php:482
+msgid "Support"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:484
+#: include/class-cf7-email-addon.php:484
+msgid "Premium"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:522
+#: include/class-cf7-email-addon.php:522
+msgid "Love using Contact form 7 email addon? Share your experience with a review on WordPress.org. Your feedback helps us improve the plugin and continue delivering new features and enhancements."
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:530
+#: include/class-cf7-email-addon.php:530
+msgid "Leave a review"
+msgstr ""
+
+#: artifacts/cf7-email-add-on/include/class-cf7-email-addon.php:533
+#: include/class-cf7-email-addon.php:533
+msgid "I already did"
+msgstr ""
+
+#: include/class-cf7-email-addon.php:214
+msgid "Email Addon for Contact Form 7 Pro Features: "
+msgstr ""

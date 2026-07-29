@@ -2,8 +2,7 @@
 /**
  * CF7 Email shortcode list.
  *
- * @package Contact form 7
- * @subpackage Cotact form 7 email addon
+ * @package CF7_Email_Addon
  */
 
 // Exit if accessed directly.
@@ -67,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</tr>
 			<tr>
 				<td width="185"><code><?php echo esc_html( '[_serial_number]' ); ?></code></td>
-				<td><?php esc_html_e( 'This tag is replaced by a numeric string whose value increments, <br> so this tag can work as the serial number of each submission. Requires Flamingo 1.5+ be installed.', 'cf7-email-add-on' ); ?></td>
+				<td><?php esc_html_e( 'This tag is replaced by a numeric string whose value increments, so this tag can work as the serial number of each submission. Requires Flamingo 1.5+ be installed.', 'cf7-email-add-on' ); ?></td>
 			</tr>
 		</table>
 	</div>

@@ -12,12 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" <?php language_attributes( 'xhtml' ); ?>>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="format-detection" content="telephone=no"/>
-	<title>Contact Form 7 Email Addon</title>
-	<style type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="format-detection" content="telephone=no" />
+<title>Contact Form 7 Email Addon</title>
+<style type="text/css">
 	body {
 		margin: 0 !important;
 		padding: 0 !important;
@@ -43,23 +44,147 @@ if ( ! defined( 'ABSPATH' ) ) {
 		padding: 0px !important;
 	}
 </style>
+<style type="text/css">
+	body {
+		margin: 0 !important;
+		padding: 0 !important;
+		-webkit-text-size-adjust: 100% !important;
+		-ms-text-size-adjust: 100% !important;
+		-webkit-font-smoothing: antialiased !important;
+	}
+	img {
+		border: 0 !important;
+		outline: none !important;
+	}
+	table {
+		border-collapse: collapse;
+		mso-table-lspace: 0px;
+		mso-table-rspace: 0px;
+	}
+	td, a, span {
+		border-collapse: collapse;
+		mso-line-height-rule: exactly;
+	}
+	p {
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	/* Default readable text color to avoid accidental white-on-white text */
+	body, td, p, a, span {
+		color: #000000;
+	}
+	.em_defaultlink a {
+		color: inherit !important;
+		text-decoration: none !important;
+	}
+	.ExternalClass * {
+		line-height: 100%;
+	}
+	span.MsoHyperlink {
+		mso-style-priority: 99;
+		color: inherit;
+	}
+	span.MsoHyperlinkFollowed {
+		mso-style-priority: 99;
+		color: inherit;
+	}
+	@media only screen and (max-width: 680px) {
+		.main_table {
+			overflow: hidden;
+			width: 100% !important;
+			min-width: 0 !important;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+		.table_responsive {
+			width: 100% !important;
+			max-width: 100% !important;
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+		.table_responsive td, .table_responsive th {
+			width: 100% !important;
+			display: block !important;
+			box-sizing: border-box !important;
+		}
+		.table_responsive.two_col tr td:first-child {
+			width: 30% !important;
+		}
+		.two_col td, .two_col th {
+			display: table-cell !important;
+			width: 50% !important;
+			box-sizing: border-box !important;
+			vertical-align: top !important;
+		}
+		.res_hide {
+			display: none !important;
+		}
+		.copyright_bottom {
+			padding-bottom: 30px;
+		}
+		.col_resp {
+			width: 100% !important;
+			display: block !important;
+			text-align: center !important;
+			padding-bottom: 0 !important;
+		}
+		.img_resp {
+			width: 100% !important;
+			height: auto !important;
+			display: block !important;
+			padding-bottom: 10px !important;
+		}
+		.img_center {
+			display: block !important;
+			margin: 0 auto 10px !important;
+		}
+		.txt_center {
+			text-align: center !important;
+		}
+		.right_col {
+			padding-left: 0 !important;
+			padding-top: 20px !important;
+		}
+		.btn_group a {
+			display: block !important;
+		}
+		.btn_group span {
+			display: block !important;
+			height: 10px !important;
+		}
+		.footer-spacing {
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+		.copyright-box td {
+			text-align: center !important;
+		}
+		.copyright-box td:first-child {
+			padding-bottom: 0 !important;
+		}
+		.table-content {
+			padding-left: 30px !important;
+			padding-right: 30px !important;
+		}
+	}
+</style>
 </head>
 <body style="margin: 0; width: 100%;">
-	<table border="0" width="900" cellpadding="0" cellspacing="0" align="center" style="background-color: #f1f3f5;">
+	<table border="0" width="900" cellpadding="0" cellspacing="0" align="center" class="main_table" style="background-color: #f1f3f5;">
 		<tbody>
 			<tr>
 				<td align="center">
-					<table border="0" width="600" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+					<table border="0" width="600" cellpadding="0" cellspacing="0" class="main_table table_responsive" style="border-collapse: collapse;">
 						<tbody>
 							<!-- logo start -->
 							<tr>
 								<td align="left" style="padding-top: 25px; padding-bottom: 15px; margin: 0;">
 									<a href="https://www.krishaweb.com/" target="_blank" style="display: inline-block;">
-										<img src="[plugin_url]admin/assets/images/interview/logo.png" alt="logo" style="display: block;"/>
+										<img src="[plugin_url]admin/assets/images/interview/logo.png" alt="logo" style="display: block;">
 									</a>
 								</td>
 								<td>
-									<table border="0" width="100%" cellpadding="0" cellspacing="0" style="margin: 0;">
+									<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_responsive" style="margin: 0;">
 										<tbody>
 											<!-- Social Icon Start -->
 											<tr>
@@ -68,11 +193,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 														<tbody>
 															<tr>
 																<td>
-																	<a href="https://www.facebook.com/KrishaWeb/" target="_blank" style="display: inline-block; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/facebook-icon.png"></a>
-																	<a href="https://twitter.com/krishaweb" target="_blank" style="display: inline-block; margin-left: 3px; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/twitter-icon.png"></a>
-																	<a href="https://www.linkedin.com/company/krishaweb-technology" target="_blank" style="display: inline-block; margin-left: 3px; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/linkedin-icon.png"></a>
-																	<a href="https://www.pinterest.com/krishaweb/" target="_blank" style="display: inline-block; margin-left: 3px; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/pinterest-icon.png">
-																	</a>
+																	<a href="https://www.facebook.com/KrishaWeb/" target="_blank" style="display: inline-block; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/facebook-icon.png" alt="Facebook icon"></a>
+																	<a href="https://twitter.com/krishaweb" target="_blank" style="display: inline-block; margin-left: 3px; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/twitter-icon.png" alt="Twitter icon"></a>
+																	<a href="https://www.linkedin.com/company/krishaweb-technology" target="_blank" style="display: inline-block; margin-left: 3px; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/linkedin-icon.png" alt="LinkedIn icon"></a>
+																	<a href="https://www.pinterest.com/krishaweb/" target="_blank" style="display: inline-block; margin-left: 3px; margin-right: 3px;"><img src="[plugin_url]admin/assets/images/interview/pinterest-icon.png" alt="Pinterest icon"></a>
 																</td>
 															</tr>
 														</tbody>
@@ -92,10 +216,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- info image start -->
 			<tr>
 				<td align="center">
-					<table width="600" cellpadding="0" cellspacing="0" border="0">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="table_responsive">
 						<tr>
 							<td>
-								<img src="[plugin_url]admin/assets/images/interview/about-meeting-image.png" alt="" style="display: block; width: 100%; margin: 0;">
+								<img src="[plugin_url]admin/assets/images/interview/about-meeting-image.png" alt="Interview meeting illustration" class="img_resp" style="display: block; width: 100%; margin: 0;">
 							</td>
 						</tr>
 					</table>
@@ -105,19 +229,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<!-- we schedule start -->
 			<tr>
 				<td align="center">
-					<table  width="600" cellpadding="0" cellspacing="0" border="0" style="background-color: #f9f9f9;">
+					<table width="600" cellpadding="0" cellspacing="0" border="0" class="table_responsive" style="background-color: #f9f9f9;">
 						<tbody>
 							<tr>
 								<td align="center" style="border-top: 0; border-left: 5px; border-right: 5px; border-bottom: 0; border-style: solid; border-color: #666666; margin: 0;">
 									<table border="0" width="100%" cellpadding="0" cellspacing="0">
 										<tbody>
 											<tr>
-												<td style=" text-align: center; padding-bottom: 20px; font-family: Verdana,Geneva,sans-serif; font-weight: bold; font-size: 20px; line-height: 30px; color: #666666; padding-top: 40px;">
-													We Schedule interview On 18th<br> January 2019
+												<td style="text-align: center; padding-bottom: 20px; font-family: Verdana, Geneva, sans-serif; font-weight: bold; font-size: 20px; line-height: 30px; color: #666666; padding-top: 40px;">
+													<h1 style="margin: 0; font-family: Verdana, Geneva, sans-serif; font-weight: bold; font-size: 20px; line-height: 30px; color: #666666;">We Schedule interview On 18th<br> January 2019</h1>
 												</td>
 											</tr>
 											<tr>
-												<td style="text-align: center; padding-left: 30px; padding-right: 30px; padding-bottom: 60px; font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 16px; line-height: 26px; color: #666666;">
+												<td style="text-align: center; padding-left: 30px; padding-right: 30px; padding-bottom: 60px; font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 16px; line-height: 26px; color: #666666;">
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
 												</td>
 											</tr>
@@ -127,42 +251,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</tr>
 							<tr>
 								<td style="background-color: #456e74; padding-top: 35px; padding-bottom: 35px; border-top: 0; border-left: 5px; border-right: 5px; border-bottom: 0; border-style: solid; border-color: #666666; margin: 0;">
-									<table border="0" width="100%" cellpadding="0" cellspacing="0" border="0" >
+									<table border="0" width="100%" cellpadding="0" cellspacing="0">
 										<tr>
-											<td colspan="3" style="font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 25px; line-height: 26px; font-weight: bold; color: #fff; text-align: center; padding-bottom: 20px;">
-												Information About Interview
+											<td colspan="3" style="font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 25px; line-height: 26px; font-weight: bold; color: #fff; text-align: center; padding-bottom: 20px;">
+												<h2 style="margin: 0; font-family: Verdana, Geneva, sans-serif; font-size: 25px; line-height: 26px; font-weight: bold; color: #fff;">Information About Interview</h2>
 											</td>
 										</tr>
 										<tr>
-											<td valign="top"  width="196" style="text-align: center;">
+											<td valign="top" width="196" style="text-align: center;">
 												<table width="100%" cellpadding="0" cellspacing="0" border="0">
 													<tbody>
 														<tr>
 															<td align="center">
-																<img src="[plugin_url]admin/assets/images/interview/clock-icon.png" alt="" style="display: block; ">
+																<img src="[plugin_url]admin/assets/images/interview/clock-icon.png" alt="Clock icon" style="display: block;">
 															</td>
 														</tr>
 														<tr>
-															<td align="center"><span style="text-align: center; font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #ffffff; display: block; margin-top: 20px;">01:00 Pm</span>
+															<td align="center">
+																<span style="text-align: center; font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #ffffff; display: block; margin-top: 20px;">01:00 Pm</span>
 															</td>
 														</tr>
 													</tbody>
 												</table>
 											</td>
 											<td valign="top" width="196" style="text-align: center;">
-												<table border="0" width="100%" cellpadding="0" cellspacing="0" border="0">
+												<table border="0" width="100%" cellpadding="0" cellspacing="0">
 													<tbody>
 														<tr>
 															<td align="center">
 																<a href="https://calendar.google.com/calendar/r/eventedit?text=Your+Event+Name&dates=20180618T104000Z/20180618T081500Z&details=krishaWeb%20technologies,,&location=4619%20Candlelight%20Drive%20Houston,%20TX%2077014&sf=true&output=xml#eventpage_6" target="_blank" style="text-decoration: none; display: inline-block;">
-																	<img src="[plugin_url]admin/assets/images/interview/calender-icon.png" alt="" style="display: block;">
+																	<img src="[plugin_url]admin/assets/images/interview/calender-icon.png" alt="Calendar icon" style="display: block;">
 																</a>
 															</td>
 														</tr>
 														<tr>
 															<td align="center">
 																<a href="https://calendar.google.com/calendar/r/eventedit?text=Your+Event+Name&dates=20180618T104000Z/20180618T081500Z&details=krishaWeb%20technologies,,&location=4619%20Candlelight%20Drive%20Houston,%20TX%2077014&sf=true&output=xml#eventpage_6" target="_blank" style="text-decoration: none; display: inline-block;">
-																	<span style="text-align: center; font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #ffffff; display: block; margin-top: 20px;">18 jan 2019</span>
+																	<span style="text-align: center; font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #ffffff; display: block; margin-top: 20px;">18 jan 2019</span>
 																</a>
 															</td>
 														</tr>
@@ -170,19 +295,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 												</table>
 											</td>
 											<td valign="top" width="196" style="text-align: center;">
-												<table border="0" width="100%" cellpadding="0" cellspacing="0" border="0">
+												<table border="0" width="100%" cellpadding="0" cellspacing="0">
 													<tbody>
 														<tr>
 															<td align="center">
 																<a href="https://goo.gl/maps/735swTog57R2" target="_blank" style="text-decoration: none; display: inline-block;">
-																	<img src="[plugin_url]admin/assets/images/interview/map-pin-icon.png" alt="" style="display: block;">
+																	<img src="[plugin_url]admin/assets/images/interview/map-pin-icon.png" alt="Map pin icon" style="display: block;">
 																</a>
 															</td>
 														</tr>
 														<tr>
 															<td align="center">
 																<a href="https://goo.gl/maps/735swTog57R2" target="_blank" style="text-decoration: none; display: inline-block;">
-																	<span style="text-align: center; font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #ffffff; display: block; margin-top: 20px;">4619 Candlelight Drive Houston, TX 77014</span>
+																	<span style="text-align: center; font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #ffffff; display: block; margin-top: 20px;">4619 Candlelight Drive Houston, TX 77014</span>
 																</a>
 															</td>
 														</tr>
@@ -196,8 +321,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<!-- info detail end -->
 							<!-- footer start -->
 							<tr>
-								<td style="font-family: Verdana,Geneva,sans-serif; font-weight: normal; font-size: 12px; line-height: 22px; color: #72736d; text-align: left;  text-align: center; padding-top: 15px; padding-bottom: 15px; border-top: 0; border-left: 5px; border-right: 5px; border-bottom: 5px; border-style: solid; border-color: #666666;">
-									&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #72736d">KrishaWeb</a>
+								<td style="font-family: Verdana, Geneva, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px; color: #72736d; text-align: left; text-align: center; padding-top: 15px; padding-bottom: 15px; border-top: 0; border-left: 5px; border-right: 5px; border-bottom: 5px; border-style: solid; border-color: #666666;">
+									&copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> <a href="https://www.krishaweb.com/" target="_blank" style="text-decoration: none; color: #72736d;">KrishaWeb</a>
 								</td>
 							</tr>
 							<!-- footer end -->

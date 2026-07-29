@@ -31,7 +31,7 @@
 	box-sizing: border-box;
 }
 .cf7ea-template-list ul li{
-	padding: 15px;
+	padding: 18px;
 	width: 25%;
 	margin-bottom: 10px;
 	box-sizing: border-box;
@@ -109,14 +109,76 @@
 	opacity: 1;
 	visibility: visible;
 }
-.cf7ea-template-list ul li.cf7ea-template-active.cf7ea-template-selected .cf7ea-template-overlay{
-	opacity: 0;
-	visibility: hidden;
+.cf7ea-template-list ul li .cf7ea-template-overlay .cf7ea-template-selected-info{
+	display: none;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+}
+.cf7ea-template-list ul li .cf7ea-template-overlay .cf7ea-template-selected-info .dashicons{
+	width: 32px;
+	height: 32px;
+	font-size: 32px;
+	line-height: 1;
+	margin-bottom: 6px;
+}
+.cf7ea-template-list ul li .cf7ea-template-overlay .cf7ea-template-selected-info small{
+	margin-top: 4px;
+	padding: 0 15px;
+	font-size: 11px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.85);
+}
+.cf7ea-template-list ul li.cf7ea-template-pending .cf7ea-template-overlay{
+	opacity: 1;
+	visibility: visible;
+	background: rgba(22, 146, 148, 0.9);
+}
+.cf7ea-template-list ul li.cf7ea-template-pending .cf7ea-template-overlay .selecte_template{
+	display: none;
+}
+.cf7ea-template-list ul li.cf7ea-template-pending .cf7ea-template-overlay .cf7ea-template-selected-info{
+	display: -ms-flexbox;
+	display: flex;
 }
 .cf7ea-template-list ul li.cf7ea-template-active .cf7ea-template-box{
 	-webkit-box-shadow: 0px 0px 0px 2px #169294;
 	-moz-box-shadow: 0px 0px 0px 2px #169294;
 	box-shadow: 0px 0px 0px 2px #169294;
+}
+.cf7ea-template-badge{
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	z-index: 2;
+	padding: 3px 10px;
+	background: #169294;
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.cf7ea-template-list ul li .cf7ea-template-name .custom-control{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.cf7ea-template-list ul li.cf7ea-template-active .cf7ea-template-badge{
+	display: inline-block;
 }
 .cf7ea-template-list ul li .cf7ea-template-box a{
 	display: block;
@@ -129,8 +191,133 @@
 	padding: 15px;
 	border-top: 3px solid #f8f8f8;
 }
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-box{
+	-webkit-transition: transform 0.25s ease, box-shadow 0.25s ease;
+	-moz-transition: transform 0.25s ease, box-shadow 0.25s ease;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-box:hover{
+	transform: translateY(-4px);
+	box-shadow: 0 14px 32px rgba(109, 40, 217, 0.35);
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-visual{
+	position: relative;
+	overflow: hidden;
+	/* Matches the ~782:902 aspect ratio of the template preview thumbnails so the card height lines up. */
+	aspect-ratio: 782 / 902;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: linear-gradient(150deg, #1b1033 0%, #241a4d 45%, #6d28d9 100%);
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-glow{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	right: -60px;
+	top: -60px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 210, 92, 0.55) 0%, rgba(255, 210, 92, 0) 70%);
+	pointer-events: none;
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-badge{
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: 2;
+	background: linear-gradient(90deg, #ffd25c, #ff9d4d);
+	color: #2a1a00;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 4px 10px;
+	border-radius: 20px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-content{
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	padding: 20px;
+	color: #ffffff;
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-content .cf7ea-promo-icon{
+	width: 38px;
+	height: 38px;
+	font-size: 38px;
+	line-height: 1;
+	color: #ffd25c;
+	-webkit-filter: drop-shadow(0 0 10px rgba(255, 210, 92, 0.6));
+	filter: drop-shadow(0 0 10px rgba(255, 210, 92, 0.6));
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-content h3{
+	margin: 10px 0 6px;
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 700;
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-content p{
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.75);
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-footer{
+	text-align: center;
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-btn{
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 6px;
+	background: linear-gradient(90deg, #ffd25c, #ff9d4d);
+	color: #2a1a00 !important;
+	font-weight: 700;
+	font-size: 13px;
+	padding: 9px 18px;
+	border-radius: 30px;
+	text-decoration: none;
+	-webkit-transition: filter 0.2s ease;
+	-moz-transition: filter 0.2s ease;
+	transition: filter 0.2s ease;
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-btn:hover{
+	filter: brightness(1.08);
+}
+.cf7ea-template-list ul li.cf7ea-template-promo .cf7ea-promo-btn .dashicons{
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+}
 /*==============================================================
 	cf7ea template list style end
+==============================================================*/
+/*==============================================================
+	cf7ea contact forms list table column
+==============================================================*/
+.column-cf7ea_active_template{
+	width: 16%;
+}
+.cf7ea-column-templates{
+	margin: 0;
+}
+.cf7ea-column-templates li{
+	list-style: none;
+	margin: 0 0 4px;
+}
+.cf7ea-column-templates li:last-child{
+	margin-bottom: 0;
+}
+.cf7ea-column-none{
+	color: #787c82;
+	font-style: italic;
+}
+/*==============================================================
+	cf7ea contact forms list table column end
 ==============================================================*/
 /*==============================================================
 	magnific popup css start
@@ -330,20 +517,20 @@
 	margin-bottom: 15px;
 	padding-top: 6px;
 }
-#contact-form-editor #tag-generator-list a.button{
+#contact-form-editor #tag-generator-list button{
 	box-shadow: none;
 	border: 1px solid #169294;
 	background: #ffffff;
 	margin: 2px 4px;
 	color: #363636;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-#contact-form-editor #tag-generator-list a.button:hover{
+#contact-form-editor #tag-generator-list button:hover{
 	background: #169294;
 	color: #ffffff;
 }
@@ -469,7 +656,6 @@
 	font-weight: 500;
 	box-shadow: none;
 	font-size: 15px;
-	padding: 6px 20px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -494,7 +680,6 @@
 	font-weight: 500;
 	box-shadow: none;
 	font-size: 14px;
-	padding: 3px 15px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -504,9 +689,9 @@
 }
 
 #wpcf7-admin-form-element #delete-action input.delete{
-	border: 1px solid #ff5f73;
+	border: 1px solid red;
 	font-family: 'Roboto', sans-serif;
-	background: #ff5f73;
+	background: red;
 	color: #ffffff;
 	-webkit-border-radius: 0.25rem;
 	-moz-border-radius: 0.25rem;
@@ -555,7 +740,6 @@
     outline: none;
     border: none;
     box-shadow: none;
-    text-align: ;
     text-decoration: none;
 
 }
@@ -788,4 +972,16 @@
 
 .cf7-buy-now a:not(:last-child) {
 	margin-right: 10px;
+}
+
+.cf7ea-mail-options-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	width: 99%;
+}
+
+.cf7ea-mail-options-row .cf7ea-mail-checkboxes p {
+	margin: 0.5em 0;
 }
